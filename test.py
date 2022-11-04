@@ -14,4 +14,4 @@ logging.config.fileConfig('logging.conf')
 
 logger = logging.getLogger('__name__')
 
-logger.debug('First')
+logger.debug('Second')

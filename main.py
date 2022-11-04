@@ -27,3 +27,4 @@ if __name__ == '__main__':
 
     health_check(hc_key=config.hc_key)
     print("DONE")
+
