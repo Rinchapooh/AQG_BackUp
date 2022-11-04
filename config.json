@@ -1,11 +1,15 @@
 {
-  "local_folder": "/backup/postgres",
-  "dist_folder": "BackupFTP:/backup_1c/postgres",
-  "host_src": "10.10.1.181",
-  "username_src": "postgres",
-  "password_src": "",
-  "hc_key": "f46c0d1a-fb63-4a36-9ed7-f951eea35de9",
-  "databases": [
-    "rt_test_1"
-  ]
+  "server_name": "WIN19SQL95",
+  "server_ip": "192.168.1.93",
+  "server_port": "139",
+  "client_pc_name": "AQG_BACKUPS-016",
+  "user": "BackUpOperator",
+  "password": "Asdf123!@#",
+  "daily_folder": "F:\\AQG\\TEST\\DAILY\\",
+  "monthly_folder": "F:\\AQG\\TEST\\MONTHLY\\",
+  "shared_folder": "test",
+  "root_folder": "\\",
+  "file_mask": "*.txt",
+  "hc_key": "f46c0d1a-fb63-4a36-9ed7-f951eea35de9"
+
 }
