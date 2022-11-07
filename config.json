@@ -3,8 +3,8 @@
   "server_ip": "192.168.1.93",
   "server_port": "139",
   "client_pc_name": "AQG_BACKUPS-016",
-  "user": "BackUpOperator",
-  "password": "Asdf123!@#",
+  "user": "USER",
+  "password": "PASSWORD",
 
   "daily_folder": "F:\\AQG\\TEST\\DAILY\\",
   "daily_folder_test": "D:\\TEST\\AQG\\DAILY\\",
