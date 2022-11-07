@@ -5,8 +5,13 @@
   "client_pc_name": "AQG_BACKUPS-016",
   "user": "BackUpOperator",
   "password": "Asdf123!@#",
+
   "daily_folder": "F:\\AQG\\TEST\\DAILY\\",
+  "daily_folder_test": "D:\\TEST\\AQG\\DAILY\\",
+
   "monthly_folder": "F:\\AQG\\TEST\\MONTHLY\\",
+  "monthly_folder_test": "D:\\TEST\\AQG\\MONTHLY\\",
+
   "shared_folder": "test",
   "root_folder": "\\",
   "file_mask": "*.txt",

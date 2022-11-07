@@ -1,8 +1,9 @@
 import json
-import logging
+import logging.config
+import socket
+import urllib
 from types import SimpleNamespace
 from smb.SMBConnection import SMBConnection
-
 
 ERROR_LOG_FILENAME = 'AQG_backup.log'
 LOGGING_CONFIG = {
@@ -94,11 +95,17 @@ def load_config(filename: str) -> object:
         return
 
 
-def get_connection(cfg):
+def health_check(hc_key: str):
+    try:
+        urllib.request.urlopen(f'https://hc-ping.com/{hc_key}', timeout=10)
+    except socket.error as e:
+        print(e)
 
+
+def get_connection(cfg):
     try:
 
-        conn = SMBConnection(cfg.user1, cfg.password, cfg.client_pc_name, cfg.server_name)
+        conn = SMBConnection(cfg.user, cfg.password, cfg.client_pc_name, cfg.server_name)
         conn.connect(cfg.server_ip, timeout=5)
         logging.debug(conn)
 
@@ -107,6 +114,3 @@ def get_connection(cfg):
 
     except Exception as e:
         print(e)
-        logging.getLogger('smb')
-        logging.debug(e)
-
