@@ -107,8 +107,7 @@ def get_connection(cfg):
 
         conn = SMBConnection(cfg.user, cfg.password, cfg.client_pc_name, cfg.server_name)
         conn.connect(cfg.server_ip, timeout=5)
-        logging.debug(conn)
-
+        # logging.debug(conn)
         return conn
 
 
